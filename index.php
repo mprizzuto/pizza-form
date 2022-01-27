@@ -38,7 +38,7 @@
 						</label>
 
 						<label>amount of people
-							<input type="text" name="people" min="0">
+							<input type="text" name="guests" min="0">
 						</label>
 
 						<input type="submit" name="submit">
