@@ -13,12 +13,24 @@ a string: "there are {guest} people coming. each person gets {pizzaSlice} slice 
 
 ## pseudocode
 - *convert* form field values from strings to numbers
+
+- store form fields in $guests and $pizzaPie variables, rspectively
+
 - dont allow negative values
+
 - *only allow whole numbers* (i.e prevent invalid guest amount)
+
 - dynamically print singular or plural for pizzas(see **tests**) based on *guest amount*
+
 - *output error in form fields* for user feedback
 
 ## tests
+### passing case (plural)
+there are 2 guests coming
+there are 3 pizza pies
+
+each person gets 1.5 slices
+
 ### singular
 one pizza
 one person

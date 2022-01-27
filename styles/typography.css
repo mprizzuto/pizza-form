@@ -1,22 +1,32 @@
 h1 {
-	font-size: 4em;
+	font-size: clamp(2.3em, 6vw, 6em);
 	margin-top: 10px;
 }
 
-h2 {
-	font-size: 1.5em;
+h1:first-letter, h2:first-letter {
+	text-transform: capitalize;
 }
 
 h1 + h2 {
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 h1, h2 {
 	line-height: 1.2;
+	font-family: "trebuchet ms", sans-serif;
+	letter-spacing: 0.03em;
+}
+
+h2 {
+	font-size: clamp(1.2em, 2vw, 3em);
 }
 
 em {
 	font-style:  italic;
+}
+
+.customer-cta em {
+	display: inline-block;
 }
 
 strong {
@@ -32,12 +42,17 @@ inner-column {
 	display:  block;
 }
 
-inner-column, header {
+inner-column, .results {
 	max-width: 600px;
 	margin-right: auto;
 	margin-left:  auto;
 	line-height: 1.5;
 	padding:  10px;
+	letter-spacing: 0.02em;
+}
+
+main {
+
 }
 
 /*form*/
@@ -45,8 +60,13 @@ form label {
 	display:  block;
 }
 
+form label > input {
+	min-width: 15%;
+}
+
 form {
 	line-height: 2;
+	margin-top: 10px;
 }
 
 form * {
@@ -65,6 +85,7 @@ label :focus {
 
 .success-theme {
 	border:  3px double green;
+	padding:  5px;
 }
 
 .passed-field {
@@ -73,6 +94,11 @@ label :focus {
 
 .failed-field {
 	color:  red;
+}
+
+/*results area*/
+.results {
+	margin-top: 20px;
 }
 
 
