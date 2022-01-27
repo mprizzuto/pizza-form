@@ -10,7 +10,17 @@
 		<?php 
 		include "functions.php";
 		formatInput($_POST);
+
+		$userMessage = "";
+
+		if ( in_array("", $_POST) ) {
+			$userMessage = "error-message";
+		} else {
+			$userMessage = "success-message";
+
+		}
 		?>
+
 		<main class="exercise-main">
 			<section class="welcome">
 				<inner-column>
@@ -34,6 +44,12 @@
 						<input type="submit" name="submit">
 
 					</form>
+				</inner-column>
+			</section>
+
+			<section class="results">
+				<inner-column class ="<?=$userMessage?>">
+					hshs
 				</inner-column>
 			</section>
 		</main>
