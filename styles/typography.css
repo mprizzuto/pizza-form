@@ -58,3 +58,13 @@ label :focus {
 }
 
 
+/*user messages*/
+.error-message {
+	border:  2px double red;
+}
+
+.success-message {
+	border:  3px double green;
+}
+
+
