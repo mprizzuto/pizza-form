@@ -30,10 +30,14 @@ p {
 /*sections*/
 inner-column {
 	display:  block;
+}
+
+inner-column, header {
 	max-width: 600px;
 	margin-right: auto;
 	margin-left:  auto;
 	line-height: 1.5;
+	padding:  10px;
 }
 
 /*form*/
