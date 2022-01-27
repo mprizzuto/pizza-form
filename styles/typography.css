@@ -59,12 +59,20 @@ label :focus {
 
 
 /*user messages*/
-.error-message {
+.error-theme {
 	border:  2px double red;
 }
 
-.success-message {
+.success-theme {
 	border:  3px double green;
+}
+
+.passed-field {
+	color:  green;
+}
+
+.failed-field {
+	color:  red;
 }
 
 
