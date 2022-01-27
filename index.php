@@ -22,7 +22,7 @@
 						</label>
 
 						<label>amount of people
-							<input type="text" name="people">
+							<input type="text" name="people" min="0">
 						</label>
 
 						<input type="submit" name="submit">
