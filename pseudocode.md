@@ -17,6 +17,7 @@ a string: "there are {guest} people coming. each person gets {pizzaSlice} slice 
 - *only allow whole numbers* (i.e prevent invalid guest amount)
 - dynamically print singular or plural for pizzas(see **tests**) based on *guest amount*
 - *output error in form fields* for user feedback
+
 ## tests
 ### singular
 one pizza
