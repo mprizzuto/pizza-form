@@ -1,0 +1,7 @@
+@import "reset.css";
+@import "setup.css";
+@import "typography.css";
+
+* {
+	outline:  2px solid red;
+}
