@@ -1,11 +1,56 @@
 h1 {
-	font-size: 2em;
+	font-size: 4em;
+	margin-top: 10px;
 }
 
 h2 {
+	font-size: 1.5em;
+}
 
+h1 + h2 {
+	margin-top: 40px;
 }
 
 h1, h2 {
 	line-height: 1.2;
 }
+
+em {
+	font-style:  italic;
+}
+
+strong {
+	font-weight:  bolder;
+}
+
+p {
+	margin-top: 5px;
+}
+
+/*sections*/
+inner-column {
+	display:  block;
+	max-width: 600px;
+	margin-right: auto;
+	margin-left:  auto;
+	line-height: 1.5;
+}
+
+/*form*/
+form label {
+	display:  block;
+}
+
+form {
+	line-height: 2;
+}
+
+form * {
+	margin-top: 5px;
+}
+
+label :focus {
+	outline:  2px double gold;
+}
+
+
