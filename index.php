@@ -47,7 +47,7 @@
 					$userMessage = "there's {$guests} person coming, they ordered {$pizzaPies} pizza pies. they get all the pizza";
 				} else {
 					// $userMessage = "there's {$guests} people coming, they ordered {$pizzaPies} pizza pies. They get {$slicesPerPerson} slices each";
-					$userMessage = "there's {$guests} people coming, they ordered {$pizzaPies} pizza pies. they get " . $slicesPerPerson . " slices each";
+					$userMessage = "there's {$guests} people coming, they ordered {$pizzaPies} pizza pies. they get " . $slicesPerPerson / $guests . " slices each";
 				}
 			}
 		}
