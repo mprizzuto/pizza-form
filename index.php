@@ -16,7 +16,8 @@
 		$userMessage = $errorMessage = "";
 		$pizzaPies = $_POST["pizza"] ?? null;
 		$guests = $_POST["guests"] ?? null;
-		// $slicesPerPerson = $pizzaPies / $guests;
+		$piesPerPerson = $pizzaPies * $guests;
+
 
 		// check if form is submitted
 		if($_SERVER["REQUEST_METHOD"] === "POST") {
@@ -38,7 +39,7 @@
 				$errorTheme = "passed";
 
 				$userMessage = "your results are";
-				$slicesPerPerson = $pizzaPies / $guests;
+				$slicesPerPerson = $piesPerPerson / $guests;
 
 				// calculate guest amount. singlar VS plural case
 				if ((int) $guests === 1 ) {
@@ -46,7 +47,7 @@
 					$userMessage = "there's {$guests} person coming, they ordered {$pizzaPies} pizza pies. they get all the pizza";
 				} else {
 					// $userMessage = "there's {$guests} people coming, they ordered {$pizzaPies} pizza pies. They get {$slicesPerPerson} slices each";
-					$userMessage = "there's {$guests} people coming, they ordered {$pizzaPies} pizza pies. they get" . ceil($slicesPerPerson) . "slices each";
+					$userMessage = "there's {$guests} people coming, they ordered {$pizzaPies} pizza pies. they get " . $slicesPerPerson . " slices each";
 				}
 			}
 		}
